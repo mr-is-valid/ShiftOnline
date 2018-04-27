@@ -1,0 +1,23 @@
+
+
+<center>
+  <h4> : ואלו הן הדיברות  </h4>
+</center>
+
+<div class="wrapper ">
+    <div class="scroll-panel">
+
+        <br>
+
+        <div *ngFor="let dibraItem of dibroteList ; let i = index ">
+          <div class="container" >
+              <div class="bot-image"></div>
+              <p class="triangle-right right" ></p>
+              <div class="chat-bubble ">
+                  <p>{{dibraItem.dibraText}}</p>
+              </div>
+          </div><br>
+        </div>
+
+    </div>
+</div>

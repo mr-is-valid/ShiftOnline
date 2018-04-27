@@ -1,0 +1,53 @@
+.container{
+    display         : flex;
+    flex-direction  : row; 
+
+    justify-content : space-between;
+
+    margin-top: 60px;
+
+    direction       : rtl;
+}
+
+ul {
+    width: 300px;
+
+    list-style-type: square;
+}
+
+li{
+    list-style: square;
+    font-size: 25px;
+}
+
+li > u {
+    color:black;
+    font-size: 16px;
+    font-weight: bold;
+}
+
+li > div{
+    color: black;
+
+    font-size: 15px;
+}
+
+.li-vication{
+    color: #FFA1B5;
+}
+
+.li-after-boss{
+    color: #86C7F3;
+}
+
+.li-duty{
+    color: #FFE29A;
+}
+
+.li-other{
+    color: #F1F2F4;
+}
+
+.li-man-power{
+    color: #7AE2E2;
+}
