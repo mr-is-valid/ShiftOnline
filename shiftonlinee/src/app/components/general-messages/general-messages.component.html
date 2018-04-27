@@ -1,0 +1,20 @@
+<div class="buttons_bar">
+
+    <!--<button class="btn btn-success add_message_btn" (click)="addmessage()">Add message</button> -->
+
+    <!-- TODO Remove this comment <app-add-message-modal (OnClick)="handleModalClick($event)"></app-add-message-modal> -->
+
+    <button class="btn btn-primary save_all_messages_btn" (click)="saveAllmessages()">Save all messages</button>
+</div>
+<ul *ngIf="this.messages.length>0; else emptyList">
+    <li *ngFor="let message of this.messages">
+        <div class=message_item>
+            <app-message (removeMessageClick)="handleRemoveClick($event)" [messageData]="message" [today]="this.today"></app-message>
+        </div>
+    </li>
+</ul>
+<ng-template #emptyList>
+    <div class="empty-list-message">
+        <h2 class="message">הרשימה ריקה</h2>
+    </div>
+</ng-template>

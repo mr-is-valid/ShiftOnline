@@ -1,0 +1,35 @@
+.buttons_bar{
+    margin-top: 2%;
+    margin-left: 3%;
+}
+.add_message_btn{
+    float: left;
+}
+
+.save_all_messages_btn{
+    margin-left: 1%;
+}
+
+.message_item{
+    height: 100%;
+}
+
+.labels_on_right{
+    float: right;
+}
+
+.labels_on_left{
+    float: left;
+}
+
+li{
+    padding-bottom: 10%;
+}
+
+ul{
+    padding-bottom: 30%;
+}
+.message{
+    text-align: center;
+    margin-top: 3%;
+  }

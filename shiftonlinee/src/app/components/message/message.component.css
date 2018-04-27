@@ -1,0 +1,85 @@
+.body{
+    margin-top: 3%;
+    text-align: left;
+    height: 100%; 
+    padding-bottom: 5%;
+}
+
+
+.textarea_field{
+    width: 90%;
+    float: left;
+    height: 100%;
+}
+
+.labels{
+    font-size: 20px;
+}
+
+.labels_on_right{
+    direction: rtl;
+}
+
+.current_contect_update_time{
+    margin-left: 5%;
+    float: left;
+}
+.message_name{
+    float: left;
+}
+
+.last_update, .creation_time{
+    float: right;
+}
+.last_update{
+    margin-right: 2%;
+}
+.creation_time{
+    margin-right: 3%;
+}
+
+textarea{
+    width: 100%;
+    direction: rtl;
+}
+
+.right_side_of_textarea, .left_side_of_textarea{
+height: 100%;
+
+margin-top: 3%;
+}
+
+.left_side_of_textarea{
+    float: left;
+}
+.right_side_of_textarea{
+    float: left;
+}
+
+.left_arrow, .right_arrow{
+    height: 200%;
+}
+.left_arrow{
+    float: left;
+}
+
+.right_arrow{
+    float: right;
+}
+
+textarea{
+    resize: vertical;
+    float: left;
+}
+
+.message_settings{
+    margin-top: 4.5%;
+    float: left;
+    width: 7%;
+    height: 100%;
+    margin-left: 1%;
+}
+
+.save_message_btn, .edit_message_btn, .remove_message_btn{
+    width: 90%;
+}

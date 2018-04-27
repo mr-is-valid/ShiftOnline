@@ -1,0 +1,42 @@
+<div class="body">
+  <div class="textarea_field">
+          <div class="labels">
+                  <div class="labels_on_left">
+                          <div class="message_name">
+                                  <span class="message_name_tag">{{message.name}}</span>
+                          </div>
+                          <div class="current_contect_update_time">
+                                  <button class="btn right_arrow" (click)="newerContent()"> > </button>
+                                  <span class="current_contect_update_time_tag">{{message.content[currentContent]._updateTime._day}}/{{message.content[currentContent]._updateTime._mounth}}/{{message.content[currentContent]._updateTime._year}}</span>
+                                  <button class="btn left_arrow" (click)="olderContent()">
+                                          < </button>
+                          </div>
+                  </div>
+
+                  <div class="labels_on_right">
+                          <div class="creation_time">
+                                  <label class="creation_time_tag">נוצר בתאריך: </label>
+                                  <span class="creation_time__value" id="creation_time_{{message.id}}">{{message.dateOfCreation}}</span>
+                          </div>
+                          <div class="last_update">
+                                  <label class="last_update_tag">עדכון אחרון: </label>
+                                  <span class="last_update_value"  id="last_update_{{message.id}}">{{message.lastUpdate}}</span>
+                          </div>
+                  </div>
+
+          </div>
+          <textarea rows="5" >{{this.messageContentValue}}</textarea>
+  </div>
+  <div class="message_settings">
+          <button class="btn btn-sm btn-primary save_message_btn" id="save_message_{{message.id}}" (click)="savemessage(message)">
+                  <span>שמירה</span>
+          </button>
+          <br>
+          <button class="btn btn-sm btn-danger remove_message_btn" id="remove_message_{{message.id}}" (click)="removemessage(message)">
+                  <span>מחיקה</span>
+          </button>
+          <br>
+         <!-- TODO remove this comment <app-update-message-modal (OnClick)="handleUpdateClick($event)" [messageData]="message"></app-update-message-modal> -->
+
+  </div>
+</div>
